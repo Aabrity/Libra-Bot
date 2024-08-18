@@ -1,0 +1,421 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - Namaste
+      - hello
+      - hi
+      - yo
+      - wassup
+      - what's up?
+      - sup
+      - hello there
+      - good morning
+      - good evening
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: help
+    examples: |
+      - I need help
+      - I need some help
+      - Need help
+      - help me
+      - help
+      - I have a confusion
+      - I have confusion
+
+  - intent: borrow
+    examples: |
+      - Can i borrow a book
+      - I would like to borrow a book
+      - Can i take a book home
+      - how do i borrow a book?
+      - how do i borrow these books?
+      - how do i borrow a book?
+      - how do i borrow these books?
+      - how do i borrow a book?
+      - how do i borrow these books?
+      - how do i borrow a book?
+      - how do i borrow these books?
+
+  - intent: goodbye
+    examples: |
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - bye bye
+      - take care
+      - later
+      - Thankyou
+      - Thanks
+      - Thank you
+      - good job
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: ask_weather
+    examples: |
+      - What's the weather like?
+      - How's the weather today?
+      - Is it going to rain?
+      - Tell me the weather.
+      - What's the forecast for today?
+      - Will it be sunny tomorrow?
+      - Is it cold outside?
+      - Do I need an umbrella today?
+      - How hot will it be today?
+      - What’s the temperature outside?
+
+  - intent: ask_author
+    examples: |
+      - Who is the author of {To Kill a Mockingbird}?
+      - Tell me the author of {1984}.
+      - Who wrote {The Great Gatsby}?
+      - who was {sonia} written by
+
+  - intent: ask_description
+    examples: |
+      - {1984}
+      - {outliers}
+      - {1984}
+      - {outliers}
+      - {1984}
+      - {outliers}
+      - {jane eyre}
+      - {Looking for the Big B}
+      - {Chaos Monkeys}
+      - {Global Brands that Changed the World}
+      - Tell me about {1984}
+      - Tell me about {the gateway}
+      - tell me about {the time traveler's wife}
+      - What is the description of {1984}?
+      - what can you tell me about {outliers}
+      - Can you tell me about {Brave New World}?
+      - I'd like to know the description of {The Catcher in the Rye}
+      - What's the description for {To Kill a Mockingbird}?
+      - Describe {Brave New World}
+      - What is {The Catcher in the Rye} about?
+      - I'd like a summary of {To Kill a Mockingbird}
+      - Can you give me a brief on {Pride and Prejudice}?
+
+  - intent: ask_category
+    examples: |
+      - What is the category of {1984}?
+      - Can you tell me the category of {Brave New World}?
+      - I'd like to know the category of {The Catcher in the Rye}
+      - what category is {1984}
+      - What's the category for {To Kill a Mockingbird}?
+      - Tell me the category of {1984}
+      - What genre is {Brave New World}?
+      - What type of book is {The Catcher in the Rye}?
+      - I'd like to know the genre of {To Kill a Mockingbird}
+
+  - intent: ask_info
+    examples: |
+      - Tell me about {1984}
+      - I want information on {Brave New World}
+      - What can you tell me about {The Catcher in the Rye}?
+      - Give me details about {To Kill a Mockingbird}
+      - I'd like to know about {1984}
+      - Can you provide info on {Brave New World}?
+      - Tell me the details of {The Catcher in the Rye}
+      - What's the information for {To Kill a Mockingbird}?
+
+  - intent: ask_similar_books
+    examples: |
+      - Can you suggest books similar to {1984}?
+      - can you suggest books like {jane eyre}
+      - can you suggest me books like {jane eyre}
+      - can you suggest me books similar to {jane eyre}
+      - can you recommend me books like {jane eyre}
+      - What are some books like {Brave New World}?
+      - What are some books similar to {Brave New World}?
+      - Recommend me books like {The Catcher in the Rye}
+      - Give me books that are like {Personality of the Cat}
+      - Are there any books similar to {1984}?
+      - Do you know books like {Brave New World}?
+      - Recommend me books similar to {The Catcher in the Rye}
+      - I want to read books like {To Kill a Mockingbird}
+
+  - intent: ask_books_by_category
+    examples: |
+      - Show me books in the {Science Fiction} category.
+      - some {fantasy} books
+      - Can you list some {Romance} books?
+      - I want some {Mystery} books
+      - {mystery} books
+      - {mystery} books
+      - {business} books
+      - {mystery} books
+      - {mystery} books
+      - {business} books
+      - I want to read {Mystery} books
+      - I want to read a {Mystery} book
+      - Recommend me some {Fantasy} books
+      - I want some {Mystery} books
+      - I want to read {Mystery} books
+      - I want to read a {Mystery} book
+      - Do you have any {History} books
+      - I want to read {Mystery} books
+      - I want to read a {Mystery} book
+      - What books have {Fiction} genre
+      - I want some {Mystery} books
+      - List books in the {Thriller} category
+      - Can you show me {Biography} books
+      - I want to read {Mystery} books
+      - I want to read a {Mystery} book
+      - I’m interested in {Horror} books
+      - Are there any {Adventure} books
+      - I want to see {Non-fiction} books
+      - What are the {Children's} books you have
+      - Give me {Classic} books
+      - Give me a {Classic} books
+      - Give me a few {Classic} books
+      - Give me some {Classic} books
+      - I need {Young Adult} books
+      - I need some {Romance} books
+      - Do you have {Dystopian} books
+      - List the {Historical Fiction} books
+      - Show me the {Self-help} books
+      - Recommend {Poetry} books
+      - What are the {Cookbooks} available
+      - Show me books in the {Graphic Novels} category
+      - Can you list some {Science Fiction} titles
+      - Recommend me some {Contemporary} books
+      - Do you have any {Urban Fiction} books
+      - What books are in the {Biography} genre
+      - List books in the {Historical} category
+      - Can you show me {Young Adult} fiction
+      - I’m interested in {Medical} book
+      - What are the {Cookbooks} you have
+      - Show me {Art} books
+      - something in {Art} books
+      - Can you list {True Crime} books
+      - Recommend me {Travel} books
+
+  - intent: ask_books_by_author
+    examples: |
+      - Can you list some books by {George Orwell}?
+      - Recommend me some books by {Agatha Christie}.
+      - Do you have any books by {Stephen King}?
+      - Do you have books by {Jane Austen}?
+      - Do you have any books by {Dirk Beckmann}?
+      - Are there any books by {Ernest Hemingway}?
+      - Find books by {F. Scott Fitzgerald}.
+      - I need books by {Charles Dickens}.
+      - Could you show books by {Leo Tolstoy}?
+      - Which books are written by {Isaac Asimov}?
+
+  - intent: library_operating_hour
+    examples: |
+      - library time
+      - What are the library's operating hours?
+      - Can you tell me the library's schedule?
+      - What are the hours of operation for the library?
+      - Is library open?
+      - What time does library opens?
+      - time library open
+      - library opening time
+      - When does the library open?
+      - What time does the library start operating?
+      - Can you tell me the library opening time?
+      - Library hours?
+      - When is the library open?
+      - What time does the library close?
+      - When does the library close?
+      - Closing time of the library?
+      - Library schedule?
+      - What’s the library timetable?
+      - Hours of operation for the library?
+      - Library working hours?
+
+  - intent: find_book_location
+    examples: |
+      - Where is the {A 2nd Helping of Chicken Soup for the Soul}?
+      - Where is {A 2nd Helping of Chicken Soup for the Soul}?
+      - Can you locate {A 2nd Helping of Chicken Soup for the Soul}?
+      - Find the location of {A 3rd Serving of Chicken Soup for the Soul}
+      - Locate {A 4th Course of Chicken Soup for the Soul}
+      - I need to find {A 2nd Helping of Chicken Soup for the Soul}
+      - What is the location of {A 3rd Serving of Chicken Soup for the Soul}?
+      - Where can I find {A 4th Course of Chicken Soup for the Soul}?
+      - Show me the location of {A 2nd Helping of Chicken Soup for the Soul}
+      - Where do I find {A 3rd Serving of Chicken Soup for the Soul}?
+      - Find {A 4th Course of Chicken Soup for the Soul} in the library
+      - Locate the book {A 2nd Helping of Chicken Soup for the Soul}
+      - Can you find {A 3rd Serving of Chicken Soup for the Soul} for me?
+      - Where is {The Great Gatsby} located?
+      - I need the location of {Moby Dick}.
+      - Where can I find {To Kill a Mockingbird}?
+      - Help me locate {1984}.
+      - What section is {Pride and Prejudice} in?
+      - Where do I look for {The Odyssey}?
+      - Can you show me where {Jane Eyre} is?
+      - Find the shelf for {War and Peace}.
+
+  - intent: check_book_availability
+    examples: |
+      - Is the {A 2nd Helping of Chicken Soup for the Soul} available?
+      - Is {A 2nd Helping of Chicken Soup for the Soul} available?
+      - Check the availability of {A 2nd Helping of Chicken Soup for the Soul}
+      - Is {A 3rd Serving of Chicken Soup for the Soul} in stock?
+      - Do you have {A 4th Course of Chicken Soup for the Soul} available?
+      - Can I borrow {A 2nd Helping of Chicken Soup for the Soul}?
+      - Is {A 3rd Serving of Chicken Soup for the Soul} available right now?
+      - Can you check if {A 4th Course of Chicken Soup for the Soul} is available?
+      - Do you have {A 2nd Helping of Chicken Soup for the Soul} in the library?
+      - Tell me if {A 3rd Serving of Chicken Soup for the Soul} is available.
+      - Do you have {A 4th Course of Chicken Soup for the Soul} in stock?
+
+  - intent: check_book_borrow
+    examples: |
+      - I want Harry Potter
+      - I want to read Harry potter
+      - I want The Hobbit
+      - I would like to read Harry Potter
+      - I wanna read The Hobbit
+      - Do you have The Hobbit
+      - I want to read Harry Potter
+      - I want Harry Potter
+      - I want to read Harry potter
+      - I want to read Harry Potter
+      - I want to check if Harry Potter is available
+      - I want to know if The Hobbit is available
+      - I want the availability of Harry Potter
+      - I want to find out if The Hobbit is in stock
+
+  - intent: request_new_arrivals
+    examples: |
+      - What are the new arrivals?
+      - Show me the new arrivals
+      - What are the latest books?
+      - Do you have any new books?
+      - Can you list the recent additions?
+      - I'm looking for the newest books.
+      - What are the most recent books you have?
+      - List the new books
+
+  - intent: ask_return_book
+    examples: |
+      - what is the procedure to return books?
+      - I want to return a book
+      - How do I return a book?
+      - What is the process for returning a book?
+      - Can I return this book?
+      - Tell me how to return a book
+      - Book return process?
+      - What’s the book return procedure?
+      - Can you guide me on returning a book?
+
+  - intent: renew_book
+    examples: |
+      - what is the procedure to renew books?
+      - How do I renew a book?
+      - What is the process for renewing a book?
+      - Can I renew this book?
+
+  - intent: ask_borrowing_time
+    examples: |
+      - How long can I borrow a book?
+      - What is the borrowing period for books?
+      - For how many days can I keep a borrowed book?
+      - How long can I keep a library book?
+      - What is the maximum borrowing time for a book?
+
+  - intent: ask_about_fines
+    examples: |
+      - What are the fines for delayed returns?
+      - Is there a fine for returning books late?
+      - What happens if I return a book late?
+      - Are there any penalties for delayed returns?
+
+  - intent: request_random_books
+    examples: |
+      - what books do you have?
+      - Show me some random book titles
+      - Can you list some random books?
+      - Give me 10 random books
+      - Give me a random book
+      - List some book titles
+      - Can you provide a list of random books?
+      - What are some books you have?
+      - Random books, please
+      - Suggest some book titles
+      - Can you give me random book names?
+      - Show me random books.
+      - Provide me with random book titles.
+      - Random book suggestions?
+      - List random book names.
+      - Suggest any random books.
+      - Can I get random book recommendations?
+      - What random books can you suggest?
+      - Show random book titles.
+
+  - intent: want_book
+    examples: |
+      - i want to read a book.
+      - i want to read a book.
+      - i want to read a book.
+      - i want a book.
+      - can i get a book.
+      - i want a book.
+      - i wanna read.
+
+  - intent: ask_categories
+    examples: |
+      - What categories do you have?
+      - List all book categories.
+      - What are the available book categories?
+      - what type of books are available?
+      - what type of books are here?
+      - what genres do you have

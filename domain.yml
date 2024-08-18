@@ -1,0 +1,102 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - borrow
+  - deny
+  - help
+  - mood_great
+  - bot_challenge
+  - ask_author
+  - ask_description
+  - ask_category
+  - ask_info
+  - ask_weather
+  - ask_similar_books
+  - ask_books_by_category
+  - ask_books_by_author
+  - library_operating_hour
+  - find_book_location
+  - check_book_availability
+  - check_book_borrow
+  - request_new_arrivals
+  - ask_return_book
+  - renew_book
+  - ask_borrowing_time
+  - ask_about_fines
+  - request_random_books
+  - want_book
+  - ask_categories
+
+responses:
+  utter_greet:
+    - text: "Hey! Welcome to the library. How can i help you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "The pleasure is mine, Thankyou <3"
+
+  utter_iamabot:
+    - text: "I am an library asistant bot, at your service."
+
+  utter_librarytime:
+    - text: "The library operates 9am-6pm."
+
+  utter_help:
+    - text: "Sure, What should i assist you with?"
+
+  utter_borrow:
+    - text: "To borrow a book, Checkout option is available in this chatbot interface. >_<"
+
+  utter_return_instruction:
+    - text: "To return a book, Checkin option is available in this chatbot interface. >_<"
+
+  utter_renew_instruction:
+    - text: "To renew a book, please consult the librarian."
+
+  utter_limit_instruction:
+    - text: "Please return the book to the library by the 7th day of checkout"
+
+  utter_fines_info:
+    - text: "If you return a book late, the following fines will apply:\n
+        1. For the first week of delay, a fine of Rs.50 per day will be charged.\n
+        2. For delays beyond one week, the fine increases to Rs.100 per day.\n
+        3. If the book is not returned within a month, your account may be suspended until the book is returned and all fines are paid.\n
+        Please ensure to return your books on time to avoid any penalties."
+
+  utter_ask_random_books:
+    - text: "Would you like me to list some random book titles?"
+
+  
+
+  
+
+actions:
+  - action_answer_author
+  - action_answer_description
+  - action_answer_category
+  - action_answer_info
+  - action_answer_similar_books
+  - action_answer_books_by_category
+  - action_find_book_location
+  - action_check_book_availability
+  - action_default_fallback
+  - action_check_book_borrow
+  - action_find_new_arrivals
+  - action_books_by_author
+  - action_list_random_books
+  - action_list_categories
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
