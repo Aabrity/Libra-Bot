@@ -1,0 +1,22 @@
+2024-07-29 01:33:24,603 - INFO - Starting camera to capture ISBN...
+2024-07-29 01:33:24,603 - DEBUG - Initializing camera...
+2024-07-29 01:33:33,076 - DEBUG - Detected barcode data: 9780571171781
+2024-07-29 01:33:33,390 - INFO - Captured ISBN: 9780571171781
+2024-07-29 01:33:33,759 - INFO - Book Info: {'ISBN': '9780571171781', 'Title': 'Pigs in Heaven', 'Author': 'Barbara Kingsolver', 'Description': "When six-year-old Turtle Greer witnesses a freak accident at the Hoover Dam, her insistence on what she has seen, and her mother's belief in her, lead to a man's dramatic rescue. But Turtle's moment of celebrity draws her into a conflict of historic proportions. The crisis quickly envelops not only Turtle and her mother, Taylor, but everyone else who touches their lives in a complex web connecting their future with their past. Pigs in Heaven travels the roads from rural Kentucky and the urban Southwest to Heaven, Oklahoma, and the Cherokee Nation, testing the boundaries of family and the many separate truths about the ties that bind. It is a spellbinding novel of heartbreak and love.", 'Availability': 'Available', 'Quantity': 3, 'Category': 'Adult Fiction', 'Location': 'S3,R1'}
+2024-07-29 01:33:41,291 - DEBUG - Data to write to Excel:             ISBN           Title  ...       Category Location
+0  9780571171781  Pigs in Heaven  ...  Adult Fiction    S3,R1
+
+[1 rows x 8 columns]
+2024-07-29 01:33:41,333 - INFO - This book already exists in the database. Incrementing quantity.
+2024-07-29 01:33:41,386 - INFO - Book information for ISBN 9780571171781 has been added to rasa_bot/actions/Books.xlsx.
+2024-07-29 01:34:35,270 - INFO - Starting camera to capture ISBN...
+2024-07-29 01:34:35,270 - DEBUG - Initializing camera...
+2024-07-29 01:34:41,883 - DEBUG - Detected barcode data: 9780571171781
+2024-07-29 01:34:42,189 - INFO - Captured ISBN: 9780571171781
+2024-07-29 01:34:42,589 - INFO - Book Info: {'ISBN': '9780571171781', 'Title': 'Pigs in Heaven', 'Author': 'Barbara Kingsolver', 'Description': "When six-year-old Turtle Greer witnesses a freak accident at the Hoover Dam, her insistence on what she has seen, and her mother's belief in her, lead to a man's dramatic rescue. But Turtle's moment of celebrity draws her into a conflict of historic proportions. The crisis quickly envelops not only Turtle and her mother, Taylor, but everyone else who touches their lives in a complex web connecting their future with their past. Pigs in Heaven travels the roads from rural Kentucky and the urban Southwest to Heaven, Oklahoma, and the Cherokee Nation, testing the boundaries of family and the many separate truths about the ties that bind. It is a spellbinding novel of heartbreak and love.", 'Availability': 'Available', 'Quantity': 1, 'Category': 'Adult Fiction', 'Location': 'S3,R1'}
+2024-07-29 01:34:45,090 - DEBUG - Data to write to Excel:             ISBN           Title              Author  ... Quantity       Category  Location
+0  9780571171781  Pigs in Heaven  Barbara Kingsolver  ...        1  Adult Fiction     S3,R1
+
+[1 rows x 8 columns]
+2024-07-29 01:34:45,109 - INFO - This book already exists in the database. Incrementing quantity.
+2024-07-29 01:34:45,174 - INFO - Book information for ISBN 9780571171781 has been added to rasa_bot/actions/Books.xlsx.
